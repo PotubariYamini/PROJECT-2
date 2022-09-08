@@ -13,7 +13,7 @@ It found a used vehicle had become 34 per cent more expensive in July 2021 compa
 *  Visualize Correlations:
 Using the Seaborn library, we can also visualize the correlations between different features. The correlations will only register for the columns with numerical data, but it is still helpful to investigate correlations the relationships between these features.
 
-3.Binarize the Features
+ 3.Binarize the Features:
 * The last step before we can model on the features is to create binary columns for the features that are not numerical. It is hard for the computer to understand the difference in meaning between all the car names, so binarizing simply tells the computer “yes this is a Volvo,” or “no, this is not a Volvo.”
 
 * Binarizing creates a specific column for each car brand, and then each row will have a 0 (not that car brand) or a 1 (it is that car brand). This process of creating binary columns for each feature is also called ‘dummifying’ the variable, and can be done easily with code in Pandas.
