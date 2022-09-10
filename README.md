@@ -34,8 +34,12 @@ Car_Name: Name of Car sold
 
 3. Requirements:
 
-Python , jupyter notebook.
-Numpy, Pandas, matplolib,seaborn and sklearn library.
+Python 
+jupyter notebook.
+Numpy
+Pandas
+matplolib
+seaborn and sklearn library.
 
 4. Exploratory Data Analysis & Cleaning:
 * first  we check the null values and also check the datatypes.
