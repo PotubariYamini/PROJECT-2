@@ -34,12 +34,13 @@ Car_Name: Name of Car sold
 
 3. Requirements:
 
-Python 
-jupyter notebook.
-Numpy
-Pandas
-matplolib
-seaborn and sklearn library.
+* Python 
+* jupyter notebook.
+* Numpy
+* Pandas
+* matplolib
+* seaborn and sklearn library.
+
 
 4. Exploratory Data Analysis & Cleaning:
 * first  we check the null values and also check the datatypes.
@@ -54,26 +55,26 @@ Using the Seaborn library, we can also visualize the correlations between differ
 
 
 
- 5. Binarize the Features:
+5. Binarize the Features:
 * The last step before we can model on the features is to create binary columns for the features that are not numerical. It is hard for the computer to understand the difference in meaning between all the car names, so binarizing simply tells the computer “yes this is a Volvo,” or “no, this is not a Volvo.”
 
 * Binarizing creates a specific column for each car brand, and then each row will have a 0 (not that car brand) or a 1 (it is that car brand). This process of creating binary columns for each feature is also called ‘dummifying’ the variable, and can be done easily with code in Pandas.
 
 * With the dummy/binary columns, the data frame now looks like this — filled with columns of 0s and 1s, except for the three numerical columns. Although there are many more columns, this process makes it possible for the model to understand the information you are providing it with.
 
-6. Split Target & Predictor Variables
+7. Split Target & Predictor Variables
 * First, we need to define our X and y variables. Y is what we are predicting (sale price) and X is everything we are using to help us make this prediction.
 * Train & Test Split:
 -> Next we need to create a training and test group for our model. We can use the code below to randomly select 70% of the data as the train group for our model to train on, and 30% will remain as our test group to test the quality of our model.
 
-7. Linear Regression:
+8. Linear Regression:
 * The first model we will try is a simple Linear Regression. It is important to assess the cross validation score, training score, and test score to reflect on how the model is performing.
 * Since the training score was much better than the test, it indicates that the model was overfitting to the training data. This means that the model has a very hard time predicting on unseen data — not good! Also, the mean cross validation score is a very large negative number. 
 
 ![image](https://user-images.githubusercontent.com/111189874/189356808-c42a738f-b452-423b-9634-a2ebf672a269.png)
 
 
-6. at last the model is tested.
+9. at last the model is tested.
 
 
 
